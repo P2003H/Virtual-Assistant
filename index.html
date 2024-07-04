@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Controlled Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="theme-switch">
+        <input type="checkbox" id="toggle" class="theme-switch__toggle">
+        <label for="toggle" class="theme-switch__label">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+        </label>
+    </div>
+    <section class="main">
+        <div class="image-container">
+            <div class="image">
+                <img src="gif.gif" alt="image">
+            </div>
+            <h1>T A L K - M A N I A</h1>
+            <p>Hi-Ya! I'm a Virtual Assistant how can I help you</p>
+            <div class="input">
+                <button class="talk"><i class="fas fa-microphone-alt"></i></button>
+                <h1 class="content">Ask me anything</h1>
+            </div>
+        </div>
+    </section>
+    <section class="responses">
+        <div class="response-container"></div>
+    </section>
+   
+    <script src="app.js"></script>
+</body>
+</html>

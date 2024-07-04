@@ -1,0 +1,190 @@
+/* Existing styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto mono", monospace;
+}
+
+.main{
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .image-container{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main .image-container .image img{
+    width: 60%;
+    margin-left: 20%;
+}
+
+.main .image-container h1{
+    color: rgb(96, 5, 117);
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+.main .image-container p{
+    color:#010b0c;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+}
+.main .input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50px;
+    border-radius: 20px;
+    background: rgba(219, 127, 237, 0.5);
+    margin-top: 10px;
+}
+
+.main .input .talk{
+    background: transparent;
+    outline: none;
+    border: none;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.main .input .talk i{
+    font-size: 20px;
+    color: #2e0530;
+}
+
+.main .input .content{
+    color: #240b62;
+    font-size: 18px;
+}
+
+/* New styles */
+/* Common styles for all responses */
+.responses {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.response-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.response {
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 18px;
+    max-width: 100%;
+    word-wrap: break-word;
+}
+
+.user-response {
+    background-color: rgba(219, 127, 237, 0.5);
+    color: rgb(64, 3, 70);
+    align-self: flex-end; 
+    border-radius: 20px;
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 18px;
+    max-width: 100%;
+    word-wrap: break-word;
+} 
+
+
+.video-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#video {
+    width: 80%;
+    height: 360px;
+}
+body.theme-dark {
+    background-color: #121212; /* Dark background color */
+    color: #f0f0f0; /* Light text color */
+}
+
+.main.theme-dark {
+    background-color: #121212; /* Dark background color */
+    color: #f0f0f0; /* Light text color */
+}
+
+.main.theme-dark .image-container h1 {
+    color: #b39ddb; /* Dark mode text color */
+}
+
+.main.theme-dark .image-container p {
+    color: #ffffff; /* Dark mode text color */
+}
+
+.main.theme-dark .input {
+    background: rgba(66, 66, 66, 0.5); /* Dark mode input background */
+}
+
+.main.theme-dark .input .talk i {
+    color: #ffffff; /* Dark mode icon color */
+}
+
+.main.theme-dark .input .content {
+    color: #b39ddb; /* Dark mode text color */
+}
+
+.video-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#video {
+    width: 80%;
+    height: 360px;
+}
+
+/* Toggle switch styles for dark mode */
+.theme-switch__label i:first-child {
+    color: #ffd700; /* Sun icon color */
+}
+
+.theme-switch__label i:last-child {
+    color: #f8f9fa; /* Moon icon color */
+}
+
+.theme-switch__toggle:checked + .theme-switch__label i:first-child {
+    transform: translateY(-50%) translateX(100%);
+}
+
+.theme-switch__toggle:checked + .theme-switch__label i:last-child {
+    transform: translateY(-50%) translateX(-100%);
+}
