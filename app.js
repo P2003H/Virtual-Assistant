@@ -122,14 +122,3 @@ btn.addEventListener('click', () => {
     recognition.start();
 });
 
-const toggleSwitch = document.querySelector('.theme-switch__toggle');
-
-toggleSwitch.addEventListener('change', function() {
-    if (this.checked) {
-        document.body.classList.add('theme-dark');
-        document.body.classList.remove('theme-light');
-    } else {
-        document.body.classList.add('theme-light');
-        document.body.classList.remove('theme-dark');
-    }
-});
